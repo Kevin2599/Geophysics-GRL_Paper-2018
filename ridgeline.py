@@ -49,7 +49,7 @@ id1 = [0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5];
 id2 = [0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1];
 fig, axs = plt.subplots(nrows=6, ncols=2)
 fig.subplots_adjust(bottom=0.06, hspace=0.5)
-fig.suptitle('% Seismic Anistropy Circle Shots', fontsize='large')
+fig.suptitle('% Seismic Anisotropy Circle Shots', fontsize='large')
 
 ang, ansp, anspError, angError = [], [], [], [] 
 
@@ -108,8 +108,8 @@ del anspError[2]
 l = 9
 
 plt.figure(3)
-plt.suptitle('% Seiemic Anistropy vs. Depth', fontsize='large')
-plt.ylabel("% Seismic Anistropy")
+plt.suptitle('% Seiemic Anisotropy vs. Depth', fontsize='large')
+plt.ylabel("% Seismic Anisotropy")
 plt.xlabel("Depth of the Regolith (m)")
 
 plt.errorbar(depthRegolith[0:l], ansp[0:l], xerr= depthStd[0:l], yerr= anspError[0:l], fmt='.k')
